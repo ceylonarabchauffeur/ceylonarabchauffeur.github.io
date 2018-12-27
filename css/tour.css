@@ -272,7 +272,7 @@
      position: fixed;
      display: inline-block;
      width: 100%;
-     height: 55px;
+     height: 90px;
      padding: 10px 0px;
      top: 0px;
      z-index: 9;
@@ -289,9 +289,9 @@
  .land-3-top-logo a{
 }
  .land-3-top-logo a img{
-     margin-top: 2px;
-     width: 180px;
-     height: 32px;
+        margin-top: -30px;
+    width: 130px;
+    height: 105px
      -webkit-object-fit: cover;
      -moz-object-fit: cover;
      -o-object-fit: cover;
@@ -304,7 +304,7 @@
 }
  .land-3-top-contact ul{
      float: right;
-     padding-top: 7px;
+     padding-top: 24px;
 }
  .land-3-top-contact ul li{
      color: #262e3e;
@@ -1140,7 +1140,9 @@
          display:none;
     }
      .land-3-top-logo a img {
-         margin: 0 auto;
+    margin-top: -2px;
+    width: 126px;
+    height: 75px;
          display: table;
     }
      .land-3-cus-box {
