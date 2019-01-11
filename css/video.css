@@ -45,11 +45,11 @@ strong {
   font-weight: bold;
 }
 li{
-	list-style-type:none;
+    list-style-type:none;
 }
 ul{
-	padding:0px;
-	margin: 0px;
+    padding:0px;
+    margin: 0px;
 }
 h1,
 h2,
@@ -106,7 +106,7 @@ COMMON
     display: inline-block;
 }
 .land-container{
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -149,17 +149,17 @@ COMMON
     /* makes sure it stays on top */
 }
 #status {
-	position: absolute;
-	left: 46%;
-	/* centers the loading animation horizontally one the screen */
-	top: 40%;
-	border: 5px solid #f3f3f3;
-	border-radius: 50%;
-	border-top: 5px solid #76cef1;
-	width: 100px;
-	height: 100px;
-	-webkit-animation: spin 2s linear infinite; /* Safari */
-	animation: spin 2s linear infinite;
+    position: absolute;
+    left: 46%;
+    /* centers the loading animation horizontally one the screen */
+    top: 40%;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #76cef1;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
 }
 
 /* Safari */
@@ -184,57 +184,96 @@ COMMON
     z-index: 9;
     box-shadow: 0 3px 35px 0.6px rgba(40, 30, 20, 0.29);
 }
-.land-3-top{}
-.land-3-top-logo{
-    float: left;
-    width: 50%;
+/*-------------------------------------------------*/
+/* = TOP SECTION 
+/*-------------------------------------------------*/
+ .land-3{
 }
-.land-3-top-logo a{}
-.land-3-top-logo a img{
-    margin-top: 2px;
-    width: 145px;
-    height: 32px;
-    -webkit-object-fit: cover;
-    -moz-object-fit: cover;
-    -o-object-fit: cover;
-    -ms-object-fit: cover;
-    object-fit: cover;
+ .land-3-top-full{
+     background: #ffffff;
+     position: fixed;
+     display: inline-block;
+     width: 100%;
+     height: 90px;
+     padding: 10px 0px;
+     top: 0px;
+     z-index: 9;
+     box-shadow: 0 3px 35px 0.6px rgba(40, 30, 20, 0.29);
+    /* background: linear-gradient(to top, #262e3e, #999ca3);
+     */
 }
-
-.land-3-top-contact{
-    float: left;
-    width: 50%;
+ .land-3-top{
 }
-.land-3-top-contact ul{
-    float: right;
-    padding-top: 7px;
+ .land-3-top-logo{
+     float: left;
+     width: 50%;
 }
-.land-3-top-contact ul li{
-    color: #36444d;
-    float: left;
-    margin-left: 50px;
-    font-weight: 500;
+ .land-3-top-logo a{
 }
-.land-3-top-contact ul li:before {
-	font-size: 18px;
-	margin-top: 1px;
-	margin-left: -26px;
-	color: #36444d;
-	font-weight: 500;
+ .land-3-top-logo a img{
+        margin-top: -30px;
+    width: 130px;
+    height: 105px
+     -webkit-object-fit: cover;
+     -moz-object-fit: cover;
+     -o-object-fit: cover;
+     -ms-object-fit: cover;
+     object-fit: cover;
 }
-.land-3-top-contact ul li:nth-child(1):before {
-    content: "local_phone";}
-.land-3-top-contact ul li:nth-child(2):before {
-    content: "mail";}
-.land-3-banner-full{
-position: relative;
-    background-image: url(../images/hero-bg.jpg);
-    background-position: 0px 0px;
-    background-repeat: repeat;
-    animation: animatedBackground 100s linear infinite;
-    padding: 60px 0px 75px 0px;
-    margin-top: 55px;	
+ .land-3-top-contact{
+     float: left;
+     width: 50%;
 }
+ .land-3-top-contact ul{
+     float: right;
+     padding-top: 24px;
+}
+ .land-3-top-contact ul li{
+     color: #262e3e;
+     float: left;
+     margin-left: 50px;
+     font-weight: 500;
+}
+ .land-3-top-contact ul li:before {
+     font-size: 18px;
+     margin-top: 1px;
+     margin-left: -26px;
+     color: #262e3e;
+     font-weight: 500;
+}
+ .land-3-top-contact ul li:nth-child(1):before {
+     content: "local_phone";
+}
+ .land-3-top-contact ul li:nth-child(2):before {
+     content: "mail";
+}
+ .land-3-banner-full{
+     position: relative;
+     background: url(../images/grass.png) no-repeat center bottom #e9f8fd;
+     background-size:100%;
+     padding: 65px 0px 65px 0px;
+     margin-top: 55px;
+}
+ .land-3-banner-full:before {
+     content: '';
+     position: absolute;
+     background: url(../images/family.png) no-repeat bottom left;
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     background-size: 500px;
+     background-position: 20% 100%;
+}
+ @keyframes animatedBackground {
+     from {
+         background-position: 0 0;
+    }
+     to {
+         background-position: 100% 0;
+    }
+}
+.land-3-banner-full{/* position: relative; *//* background-image: url(../images/hero-bg.jpg); *//* background-position: 0px 0px; *//* background-repeat: repeat; *//* animation: animatedBackground 100s linear infinite; *//* padding: 60px 0px 75px 0px; *//* margin-top: 55px; */}
 .land-3-banner-full:before {
     content: '';
     position: absolute;
@@ -245,8 +284,8 @@ position: relative;
     right: 0px;
 }
 @keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
 }
 .land-3-banner{}
 
@@ -279,14 +318,14 @@ position: relative;
     margin-bottom: 15px;
 }
 .land-3-banner-conte ul li:before{
-	content: '';
-	position: absolute;
-	background: #068ae6;
-	width: 7px;
-	height: 7px;
-	margin-left: -30px;
-	margin-top: 7px;
-	border-radius: 50px;
+    content: '';
+    position: absolute;
+    background: #068ae6;
+    width: 7px;
+    height: 7px;
+    margin-left: -30px;
+    margin-top: 7px;
+    border-radius: 50px;
 }
 
 .land-3-banner-form{
@@ -457,19 +496,19 @@ position: relative;
     box-sizing: border-box;
     text-align: center;
     text-transform: capitalize;
-	-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
 }
 .land-3-dwn-right a:hover{
-	border: 1px solid #cb2f2e;
-	color:#fff;
-	background: #D63938;
-	background: -webkit-linear-gradient(to top, #c72c2b, #ef4b4a);
-	background: linear-gradient(to top, #c72c2b, #ef4b4a);
-	border-bottom: 1px solid #bf2928;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+    border: 1px solid #cb2f2e;
+    color:#fff;
+    background: #D63938;
+    background: -webkit-linear-gradient(to top, #c72c2b, #ef4b4a);
+    background: linear-gradient(to top, #c72c2b, #ef4b4a);
+    border-bottom: 1px solid #bf2928;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 
@@ -490,7 +529,7 @@ position: relative;
     float: left;
     width: 50%;
     padding: 0px 20px;
-    margin-bottom: 70px;	
+    margin-bottom: 70px;    
 }
 .test-box{
     background: #fff;
@@ -502,12 +541,12 @@ position: relative;
     box-shadow: 0 3px 35px 0.6px rgba(40,30,20,.1);
     border-radius: 5px;
     text-align: center;
-	-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
 }
 .test-box:hover{
     background: #f2f4f7;
     box-shadow: 0px 5px 20px -8px rgba(19, 18, 18, 0.5);
-	-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
 }
 .test-box:hover.test-box img{background:#e14140;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
 .test-box h4{}
@@ -531,7 +570,7 @@ position: relative;
     border: 1px solid #1a2a38;
     padding: 10px;
     box-sizing: border-box;
-	-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
 }
 
 .land-1-foot-full{
@@ -645,16 +684,16 @@ position: relative;
     left: 82px;
 }
 .land-3-agen-right iframe{
-	border:0px;width:100%;height:190px;
+    border:0px;width:100%;height:190px;
 }
 .land-3-banner-video{}
 .land-3-banner-video iframe{
-	width: 85%;
-	height: 300px;
-	border-radius: 5px;
-	/* margin: 0 auto; */
-	/* display: table; */
-	box-shadow: 0px 12px 17px -8px rgba(0, 0, 0, 0.8);
+    width: 85%;
+    height: 300px;
+    border-radius: 5px;
+    /* margin: 0 auto; */
+    /* display: table; */
+    box-shadow: 0px 12px 17px -8px rgba(0, 0, 0, 0.8);
 }
 
 .alert {
@@ -668,18 +707,18 @@ position: relative;
     color: #155724;
     background-color: #d4edda;
     border-color: #c3e6cb;
-	text-align: center;
+    text-align: center;
 }
 
 
 @media screen and (max-width:1050px){
 .land-container{
     width: 85%;
-}	
+}   
 .land-3-banner-conte, .land-3-banner-form {
     width: 100%;
     padding-right: 0px;
-	padding-left:0px;
+    padding-left:0px;
 }
 .land-3-top-logo {
     width: 30%;
@@ -701,7 +740,7 @@ position: relative;
 .land-3-top-contact ul li {
     margin-left: 40px;
     font-size: 12px;
-}	
+}   
 .land-3-banner-full {
     padding: 40px 0px 55px 0px;
 }
@@ -715,7 +754,7 @@ position: relative;
     padding-left: 0px;}
 .land-3-agen-right ul::after {
     left: 83px;
-}	
+}   
 }
 @media screen and (max-width:767px){
 .land-3-top-logo, .land-3-dwn-img, .land-3-dwn-right {
