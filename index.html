@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <!--== CSS FILES ==-->
     <link href="css/tour.css" rel="stylesheet" />
+        <link href="css/video.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,10 +30,23 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-130570769-1');
 </script>
+    <style>
+        .mySlides {display:none;}
+        .w3-content.w3-section {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            margin-top: -5%;
+    margin-bottom: -6%;
 
+        }
+
+        img.mySlides {
+            max-height: 475px;
+        }       
+    </style>
 
 </head>
 
@@ -46,9 +60,11 @@
     <section>
         <div class="land-full land-3-top-full">
             <div class="land-container">
-                <div class="land-3-top">
+               <div class="land-3-top">
                     <div class="land-3-top-logo">
-                        <a href="#"><img src="images/travel-logo.png" alt="Company name"></a>
+                        <a href="#">
+                            <img src="images/travel-logo.png">
+                        </a>
                     </div>
                     <div class="land-3-top-contact">
                         <ul>
@@ -56,7 +72,7 @@
                             <li>Email: business@businessmail.com</li>
                         </ul>
                     </div>
-                </div>
+               </div>
             </div>
         </div>
     </section>
@@ -65,48 +81,11 @@
     <section>
         <div class="land-full land-3-banner-full">
             <div class="land-container">
-                <div class="land-3-banner">
-                    <div class="land-3-banner-conte">
-                        <h1>Travel Packages</h1>
-                        <h4>Sub Headline Aenean sed turpis volutpat</h4>
-                        <p>Nam at viverra sem. Sed faucibus sed dui eget feugiat. Praesent felis velit, maximus at dapibus semper, fermentum sagittis diam. </p>
-                    </div>
-
-                    <!-- BOOKING FORM -->
-                    <div class="land-3-banner-form">
-                        <div class="land-com-form">
-                            <h2>Book this Package</h2>
-                            <form class="contact__form" method="post" action="https://formspree.io/ceylonarabchauffeur@gmail.com">
-								<div class="alert alert-success contact__msg" style="display: none" role="alert">
-								Your message was sent successfully.
-								</div>
-                                <ul>
-                                    <li><input type="text" name="name" placeholder="Name"></li>
-									<li><input type="text" name="email" placeholder="Email id"></li>
-									<li><input type="text" name="phone" placeholder="Phone"></li>
-                                    <li><input type="text" placeholder="Date" name="noofpax"></li>
-                                    <li>
-                                        <select>
-											<option value="0">No of peoples</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-											<option value="6">6</option>
-											<option value="7">7</option>
-											<option value="8">8</option>
-											<option value="9">9</option>
-											<option value="10">10</option>
-										</select>
-                                    </li>
-                                    <li><input type="submit" name="submit" value="Book Now"></li>
-									<li><p>Praesent felis velit, maximus at dapibus semper, fermentum sagittis diam. <a href="#">Privacy Policy</a></p></li>
-                                </ul>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+<div class="w3-content w3-section">
+  <img class="mySlides" src="https://www.w3schools.com/w3css/img_la.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.w3schools.com/w3css/img_chicago.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.w3schools.com/w3css/img_ny.jpg" style="width:100%">
+</div>
             </div>
         </div>
     </section>
@@ -273,7 +252,22 @@
             </div>
         </div>
     </section>
+    <script>
+        var myIndex = 0;
+        carousel();
 
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
     <!--SCRIPTS-->
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>

@@ -100,7 +100,7 @@ input, textarea, select{outline:none;font-family: 'Poppins', sans-serif;}
 /*==========================================
 COMMON
 ============================================*/
-.land-full{
+/*.land-full{
     width: 100%;
     position: relative;
     display: inline-block;
@@ -109,7 +109,7 @@ COMMON
     width: 100%;
     margin: 0 auto;
     position: relative;
-}
+}*/
 .la-container-75{width: 950px;}
 .col1{width:10%;float:left;padding:15px;}
 .col15{width:15%;float:left;padding:15px;}
@@ -246,14 +246,14 @@ COMMON
 }
  .land-3-top-contact ul li:nth-child(2):before {
      content: "mail";
-}
+}/*
  .land-3-banner-full{
      position: relative;
      background: url(../images/grass.png) no-repeat center bottom #e9f8fd;
      background-size:100%;
      padding: 65px 0px 65px 0px;
      margin-top: 55px;
-}
+}*/
  .land-3-banner-full:before {
      content: '';
      position: absolute;
@@ -427,7 +427,7 @@ COMMON
 .land-3-dwn-full{
     /* position: relative; */
     display: inline-block;
-    padding: 60px 0px;
+    padding: 60px 25px;
 }
 .land-3-dwn{}
 .land-3-dwn-img{
