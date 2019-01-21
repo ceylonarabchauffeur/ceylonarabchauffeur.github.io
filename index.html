@@ -1513,6 +1513,12 @@ label {
 }
 	</style>
 
+
+<!-- The best place for this one is your <HEAD> tag --> 
+    <script>
+        UPLOADCARE_PUBLIC_KEY = "ab94fd2dcccef894c403";
+    </script> 
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js" charset="utf-8"></script> 
 </head>
 
 <body>
@@ -1685,7 +1691,9 @@ label {
 <label for="img">Upload NIC Copy</label></p>
 <p><input type="textarea" name="phone" placeholder="Address" rows="3" style="height: 95px;"></p>
 
-<p><input type="file" name="uploadfile" id="img" style="display:none;"><label for="img">Upload Bill Address Verification</label></p>
+<p>
+   <input type="hidden" role="uploadcare-uploader" name="uploadfile" id="img" />
+    <label for="img">Upload Bill Address Verification</label></p>
 <p><input type="text" name="phone" placeholder="Home No."></p>
 <p><input type="text" name="phone" placeholder="Mobile No."></p>
 <p><input type="text" name="phone" placeholder="Alternate Phone Number"></p>
